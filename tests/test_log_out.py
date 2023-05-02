@@ -14,4 +14,4 @@ class TestLogOut:
         WebDriverWait(driver, 8).until(
             expected_conditions.visibility_of_element_located(Locators.LOCATOR_LOGIN_HEADER))
         assert driver.find_element(*Locators.LOCATOR_LOGIN_HEADER), \
-            'Выход по кнопке "Выйти" в личном кабинете'
+            'Не отработал выход по кнопке "Выйти" в личном кабинете'

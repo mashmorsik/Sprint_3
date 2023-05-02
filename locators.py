@@ -4,8 +4,6 @@ from selenium.webdriver.common.by import By
 class Locators:
 
     #Главная страница
-    MAIN_PAGE_URL = 'https://stellarburgers.nomoreparties.site'
-
     LOCATOR_PROFILE_PAGE_BUTTON = (By.XPATH, './/p[text()="Личный Кабинет"]') #Личный Кабинет
     LOCATOR_CONSTRUCTOR_BUTTON = (By.XPATH, './/p[text()="Конструктор"]') #Кнопка Конструктор
     LOCATOR_LOGO = (By.XPATH, './/div[@class="AppHeader_header__logo__2D0X2"]/a') #Лого
@@ -19,8 +17,6 @@ class Locators:
     LOCATOR_CHOSEN_TAB = (By.CLASS_NAME, 'tab_tab_type_current__2BEPc')
 
     #Страница регистрации
-    SIGNUP_PAGE_URL = 'https://stellarburgers.nomoreparties.site/register'
-
     LOCATOR_NAME_FIELD = (By.XPATH, './/label[contains(text(),"Имя")]/following-sibling::input') #Поле Имя
     LOCATOR_EMAIL_FIELD = (By.XPATH, './/label[contains(text(),"Email")]/following-sibling::input') #Поле Email
     LOCATOR_PASSWORD_FIELD = (By.XPATH, './/label[contains(text(),"Пароль")]/following-sibling::input') #Поле Password
@@ -31,8 +27,6 @@ class Locators:
     LOCATOR_USER_EXISTS = (By.XPATH, './/p[text()="Такой пользователь уже существует"]')
 
     #Личный Кабинет
-    LOGIN_PAGE_URL = 'https://stellarburgers.nomoreparties.site/login'
-
     LOCATOR_PROFILE_BUTTON = (By.XPATH, './/a[text()="Профиль"]') #Профиль
     LOCATOR_LOGOUT_BUTTON = (By.XPATH, './/button[text()="Выход"]') #Выход
     LOCATOR_LOGIN_HEADER = (By.XPATH, './/h2[text()="Вход"]') #Название формы входа в аккаунт

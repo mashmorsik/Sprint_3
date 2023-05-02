@@ -13,7 +13,7 @@ class TestTransitions:
         WebDriverWait(driver, 8).until(
             expected_conditions.visibility_of_element_located(Locators.LOCATOR_MAKE_ORDER_BUTTON))
         assert driver.find_element(*Locators.LOCATOR_MAKE_ORDER_BUTTON), \
-            'Переход из личного кабинета в конструктор по клику на "Конструктор"'
+            'Не отработал переход из личного кабинета в конструктор по клику на "Конструктор"'
 
     def test_from_profile_to_constructor_with_logo(self, logged_in_user):
         driver = logged_in_user
@@ -22,7 +22,7 @@ class TestTransitions:
         WebDriverWait(driver, 8).until(
             expected_conditions.visibility_of_element_located(Locators.LOCATOR_MAKE_ORDER_BUTTON))
         assert driver.find_element(*Locators.LOCATOR_MAKE_ORDER_BUTTON), \
-            'Переход из личного кабинета в конструктор по клику на логотип'
+            'Не отработал переход из личного кабинета в конструктор по клику на логотип'
 
     def test_go_to_profile_page_from_main_page(self, logged_in_user):
         driver = logged_in_user
@@ -30,4 +30,4 @@ class TestTransitions:
         WebDriverWait(driver, 8).until(
             expected_conditions.visibility_of_element_located(Locators.LOCATOR_PROFILE_BUTTON))
         assert driver.find_element(*Locators.LOCATOR_PROFILE_BUTTON), \
-            'Переход в личный кабинет по клику на "Личный кабинет"'
+            'Не отработал переход в личный кабинет по клику на "Личный кабинет"'
